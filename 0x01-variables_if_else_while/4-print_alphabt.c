@@ -8,7 +8,7 @@ int main(void)
 char cL = 'a';
 while (cL <= 'z')
 {
-if( cL == 'e' || cL == 'q')
+if (cL == 'e' || cL == 'q')
 {
 cL++;
 continue;
