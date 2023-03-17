@@ -12,13 +12,13 @@ for (n = 0 ; n < 10 ; n++)
 {
 for (p = n + 1 ; p < 10 ; p++)
 {
-for (k = p + 1 ; k<10 ; k++)
+for (k = p + 1 ; k < 10 ; k++)
 {
 putchar(48 + n);
 putchar(48 + p);
-putchar(48 + k);            
+putchar(48 + k);       
 if (n == 7 && k == 9)
-continue; 			
+	continue;
 putchar(44);
 putchar(32);
 }
