@@ -9,13 +9,13 @@ char cL = 'a';
 char cU = 'A';
 while (cL <= 'z')
 {
-        putchar(cL);
-        cL++;
+putchar(cL);
+cL++;
 }
 while (cU <= 'Z')
 {
-        putchar(cU);
-        cU++;
+putchar(cU);
+cU++;
 }
 putchar('\n');
 return (0);
