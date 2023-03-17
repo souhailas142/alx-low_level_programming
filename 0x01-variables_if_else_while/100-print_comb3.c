@@ -9,7 +9,7 @@ int n;
 int p;
 for (n = 0 ; n < 10 ; n++)
 {
-for (p = n+1 ; p < 10 ; p++)
+for (p = n + 1 ; p < 10 ; p++)
 {
 putchar(48 + n);
 putchar(48 + p);
