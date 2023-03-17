@@ -4,7 +4,7 @@
 /**
 *main - random number to the variable n
 *print whether the number stored in the variable n is positive or negative
-*return (0)
+*Return: 0 (SUCCESS)
 */
 int main(void)
 {
