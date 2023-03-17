@@ -6,12 +6,12 @@
 int main(void)
 {
 int n = 0;
+char c = 'a';
 while (n < 10)
 {
 putchar((n % 10) + '0');
 n++;
 }
-char c = 'a';
 while (c <= 'f')
 {
 putchar(c);
