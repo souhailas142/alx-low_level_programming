@@ -13,7 +13,7 @@ for (p = n + 1 ; p < 10 ; p++)
 {
 putchar(48 + n);
 putchar(48 + p);
-if (p == 9 && n == 9)
+if (p == 9 && n == 9 || n == 8 && p == 9)
 continue;
 putchar(44);
 putchar(32);
