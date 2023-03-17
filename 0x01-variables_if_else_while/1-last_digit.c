@@ -1,13 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
 /**
-*main-program assign a random number 
-*print the last digit of the random number
-*return: 0 (SUCCESS)
+ *main - program assign a random number 
+ *print the last digit of the random number
+ *return: 0 (SUCCESS)
 */
-
 int main(void){
 int n;
 int lastDigit;
