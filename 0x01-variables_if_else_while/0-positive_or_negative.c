@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /*
- * main - random number to the variable n
+ * main - This program will assign a random number to the variable n each time it is executed
  * print whether the number stored in the variable n is positive or negative
  * return (0)
  *
