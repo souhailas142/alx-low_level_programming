@@ -16,7 +16,7 @@ for (k = p + 1 ; k < 10 ; k++)
 {
 putchar(48 + n);
 putchar(48 + p);
-putchar(48 + k);       
+putchar(48 + k);
 if (n == 7 && k == 9)
 	continue;
 putchar(44);
