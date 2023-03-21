@@ -20,6 +20,5 @@ printf("%d, ", n);
 n--;
 }
 }
-printf("%d", n);
-_putchar('\n');
+printf("%d\n", n);
 }
