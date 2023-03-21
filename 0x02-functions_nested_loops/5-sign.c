@@ -2,8 +2,8 @@
 /**
  * print_sign - prints the sign of a number
  * @n : int number
- * Return:1 if n is greater than zero, Return: 0 if n is zero, Return: -1 if n is less than zero
- *
+ * Return:1, Return: 0, Return: -1
+ * 
  */
 int print_sign(int n)
 {
