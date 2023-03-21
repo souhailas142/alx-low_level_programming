@@ -2,14 +2,40 @@
 /**
  * print_times_table - prints the n times table, starting with 0
  * @n: int number
- * Return: 0 
+ * fun - 
+ * @m: number
+ * @k: number
+ * Return: 0
  */
+void fun(int m, int k)
+{
+if ((m / 10) > 0)
+{
+k = (m / 10);
+if (k > 9)
+{
+_putchar((k / 10) + '0');
+_putchar((k % 10) + '0');
+}
+else
+{
+_putchar(' ');
+_putchar((m / 10) + '0');
+}
+}
+else
+{
+_putchar(' ');
+_putchar(' ');
+}
+_putchar((m % 10) + '0');
+}
 void print_times_table(int n)
 {
 int i = 0;
 int j = 1;
-int num = 0;
-int tmp = 0;
+int m = 0;
+int k = 0;
 if (n > 15 || n < 0)
 return;
 while (i <= n)
@@ -22,27 +48,8 @@ _putchar(' ');
 }
 while (j <= n)
 {
-num = i * j;
-if ((num / 10) > 0)
-{
-tmp = (num / 10);
-if (tmp > 9)
-{
-_putchar((tmp / 10) + '0');
-_putchar((tmp % 10) + '0');
-}
-else
-{
-_putchar(' ');
-_putchar((num / 10) + '0');
-}
-}
-else
-{
-_putchar(' ');
-_putchar(' ');
-}
-_putchar((num % 10) + '0');
+m = i * j;
+fun (m, k);
 if (j != n)
 {
 _putchar(',');
