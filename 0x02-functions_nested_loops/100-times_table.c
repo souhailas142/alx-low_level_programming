@@ -2,10 +2,13 @@
 /**
  * print_times_table - prints the n times table, starting with 0
  * @n: int number
- * fun - 
+ * Return: 0
+ */
+/**
+ *  fun -
  * @m: number
  * @k: number
- * Return: 0
+ *
  */
 void fun(int m, int k)
 {
@@ -49,7 +52,7 @@ _putchar(' ');
 while (j <= n)
 {
 m = i * j;
-fun (m, k);
+fun(m, k);
 if (j != n)
 {
 _putchar(',');
