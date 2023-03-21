@@ -22,8 +22,10 @@ _putchar(48 + (m/10));
 }
 _putchar(48 + (m%10));
 j++;
+if (j != 10){
 _putchar(',');
 _putchar(' ');
+}
 }
 _putchar('\n');
 i++;
