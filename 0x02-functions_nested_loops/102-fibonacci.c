@@ -7,13 +7,13 @@
  */
 int main(void)
 {
-        int f = 1;
-	int s = 2;
+        unsigned long f = 1;
+	unsigned long s = 2;
 	int i = 0;
 
 	while (i < 50)
 	{
-		printf("%d", f);
+		printf("%lu", f);
 		if (i < 49)
 		{
 			s += f;
