@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- *  fun -
+ * fun - function fun
  * @m: number
  * @k: number
- * Return: 0
+ * Return: non
  */
 void fun(int m, int k)
 {
