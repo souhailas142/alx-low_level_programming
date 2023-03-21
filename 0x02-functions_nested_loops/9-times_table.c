@@ -11,25 +11,25 @@ int i = 0;
 
 	while (i <= 9)
 	{
-		putchar('0');
-		putchar(',');
-		putchar(' ');
+		_putchar('0');
+		_putchar(',');
+		_putchar(' ');
 		while (j <= 9)
 		{
 			num = i * j;
 			if ((num / 10) > 0)
-				putchar((num / 10) + '0');
+				_putchar((num / 10) + '0');
 			else
-				putchar(' ');
-			putchar((num % 10) + '0');
+				_putchar(' ');
+			_putchar((num % 10) + '0');
 			if (j != 9)
 			{
-				putchar(',');
-				putchar(' ');
+				_putchar(',');
+				_putchar(' ');
 			}
 			j++;
 		}
-		putchar('\n');
+		_putchar('\n');
 		i++;
 		j = 1;
 	}
