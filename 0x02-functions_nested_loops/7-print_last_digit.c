@@ -9,7 +9,7 @@ int print_last_digit(int n)
 int lastD = n % 10;
 if (lastD < 0)
 {
-int a = _abs(lastD);
+int a = (-lastD);
 _putchar(48 + a);
 return a;
 }
