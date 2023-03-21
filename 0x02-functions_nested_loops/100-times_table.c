@@ -1,10 +1,5 @@
 #include "main.h"
 /**
- * print_times_table - prints the n times table, starting with 0
- * @n: int number
- * Return: 0
- */
-/**
  *  fun -
  * @m: number
  * @k: number
@@ -33,6 +28,11 @@ _putchar(' ');
 }
 _putchar((m % 10) + '0');
 }
+/**
+ * print_times_table - prints the n times table, starting with 0
+ * @n: int number
+ * Return: 0
+ */
 void print_times_table(int n)
 {
 int i = 0;
