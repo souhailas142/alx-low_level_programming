@@ -8,7 +8,7 @@
  *  fun -
  * @m: number
  * @k: number
- *
+ * Return: 0
  */
 void fun(int m, int k)
 {
