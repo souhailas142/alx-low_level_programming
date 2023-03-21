@@ -6,5 +6,16 @@
  */
 int print_last_digit(int n)
 {
-return (n % 10);
+int lastD = n % 10;
+if (lastD < 0)
+{
+int a = _abs(lastD);
+_putchar(48 + a);
+return a;
+}
+else
+{
+_putchar(48 + lastD);
+return lastD;
+}
 }
