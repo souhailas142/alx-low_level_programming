@@ -1,26 +1,20 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
 /**
- * main - Determines if a number is positive, negative or zero
- *
- * Return: 0
+*positive_or_negative - print the number if  n is positive, negative or zero
+*Return: 0 (SUCCESS)
 */
-void positive_or_negative(int i)
+void positive_or_negative(int n)
 {
-	if (i > 0)
-	{
-
-	printf("%d is positive\n", i);
-
-	}
-	else if (i < 0)
-	{
-		printf("%d is negative\n", i);
-	}
-	else
-	printf("%d is zero\n", i);
+if (n > 0)
+{
+printf("%d is positive\n", n);
+} else if (n < 0)
+{
+printf("%d is negative\n", n);
+} else
+{
+printf("%d is zero\n", n);
+}
 }
