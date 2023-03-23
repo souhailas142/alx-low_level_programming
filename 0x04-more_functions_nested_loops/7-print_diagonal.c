@@ -16,20 +16,14 @@ int i = 0, j;
 while (i < n)
 {
 j = 0;
-while (j < n)
-{
-if (i == j)
-{
-_putchar('\\');
-}
-else
+while (j < i)
 {
 _putchar(' ');
-}
 j++;
 }
-i++;
+_putchar('\\');
 _putchar('\n');
+i++;
 }
 }
 }
