@@ -17,8 +17,8 @@ _putchar(48 + n);
 }
 else
 {
-_putchar(48 + (n/10));
-_putchar(48 + (n%10));
+_putchar(48 + (n / 10));
+_putchar(48 + (n % 10));
 }
 n++;
 }
