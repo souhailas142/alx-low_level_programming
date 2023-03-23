@@ -12,16 +12,20 @@ _putchar('\n');
 }
 else
 {
-int i = 0, j;
+int i = 0;
 while (i < n)
 {
-j = 0;
+int j = 0;
 while (j < n)
 {
 if (i == j)
+{
 _putchar('\\');
+}
 else
+{
 _putchar(' ');
+}
 j++;
 }
 i++;
