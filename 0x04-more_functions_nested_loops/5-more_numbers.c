@@ -5,10 +5,10 @@
  */
 void more_numbers(void)
 {
-int i = 0;
+int i = 0, n;
 while (i < 10)
 {
-int n = 0;
+n = 0;
 while (n <= 14)
 {
 if (n < 9)
