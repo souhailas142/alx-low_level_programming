@@ -11,7 +11,7 @@ while (i < 10)
 n = 0;
 while (n <= 14)
 {
-if (n < 9)
+if (n <= 9)
 {
 _putchar(48 + n);
 }
