@@ -12,10 +12,10 @@ _putchar('\n');
 }
 else
 {
-int i = 0;
+int i = 0, j;
 while (i < n)
 {
-int j = 0;
+j = 0;
 while (j < n)
 {
 if (i == j)
