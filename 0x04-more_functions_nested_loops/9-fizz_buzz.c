@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 /**
  * main - Fizz-Buzz 
@@ -13,13 +12,11 @@ if (i % 5 == 0 && i % 3 == 0)
 {
 printf("FizzBuzz ");
 }
-else
-if (i % 5 == 0)
+else if (i % 5 == 0)
 {
 printf("Buzz ");
 }
-else
-if (i % 3 == 0)
+else if (i % 3 == 0)
 {
 printf("Fizz ");
 }
@@ -29,6 +26,6 @@ printf("%d ", i);
 }
 i++;
 }
-printf("\\");
+printf("\n");
 return (0);
 }
