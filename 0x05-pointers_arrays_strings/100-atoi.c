@@ -6,7 +6,8 @@
  */
 int _atoi(char *s)
 {
-int i = 0, rslt = 0, sg = 1;
+int i = 0, sg = 1;
+unsigned  int rslt = 0;
 while (*(s + i) != '\0')
 {
 if ((*(s + i) == 32) || ((*(s + i) >= 9) && (*(s + i) <= 13)))
