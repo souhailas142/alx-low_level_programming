@@ -9,6 +9,7 @@ int main(void)
 {
 int i, nbr;
 i = nbr = 0;
+srand(time(0));
 while (i < 2772)
 {
 nbr = rand() % 128;
