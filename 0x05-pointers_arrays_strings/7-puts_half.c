@@ -22,5 +22,3 @@ j++;
 }
 _putchar('\n');
 }
-int main() {
-}
