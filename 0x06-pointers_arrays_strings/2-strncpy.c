@@ -15,6 +15,10 @@ while (i < n && *src)
 src++;
 i++;
 }
+while (i < n)
+{
 *(dest + i) = '\0';
+i++;
+}
 return (dest);
 }
