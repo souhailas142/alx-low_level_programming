@@ -8,23 +8,21 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-int i = 0, j = 0;
+int i = 0, j, k = 0;
 char *c;
-bool found;
 while (*(needle + i) != '\0')
 {
 j = 0;
-found = false;
 while (*(haystack + j) != '\0')
 {
 if (*(needle + i) == *(haystack + j))
 {
-found = true;
+k = i;
 break;
 }
 j++;
 }
-if (found)
+if (k != 0)
 {
 return (haystack + j);
 }
