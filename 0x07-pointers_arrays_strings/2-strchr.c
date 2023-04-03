@@ -17,7 +17,7 @@ break;
 }
 i++;
 }
-if (f != NULL)
+if (f)
 {
 return (s + f);
 }
