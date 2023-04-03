@@ -8,6 +8,8 @@
 char *_strstr(char *haystack, char *needle)
 {
 int i = 0, j, k = 0;
+if (haystack == NULL)
+return ('\0');
 while (*(haystack + i) >= '\0')
 {
 j = 0;
