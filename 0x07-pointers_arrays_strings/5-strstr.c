@@ -12,7 +12,7 @@ int k = 0;
 while (*(haystack + i) != '\0')
 {
 j = 0;
-while (*(needle + j) != '\0' && ( *(haystack + i) == needle[0]))
+while (*(needle + j) != '\0' && (*(haystack + i) == needle[0]))
 {
 if (*(needle + j) != *(haystack + (i +  j)))
 {
