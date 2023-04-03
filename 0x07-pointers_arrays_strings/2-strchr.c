@@ -21,8 +21,5 @@ if (f)
 {
 return (s + f);
 }
-else
-{
 return (NULL);
-}
 }
