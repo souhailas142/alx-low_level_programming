@@ -10,7 +10,6 @@ char *_strpbrk(char *s, char *accept)
 {
 int i = 0, j;
 bool found;
-char *c;
 while (*(s + i) != '\0')
 {
 j = 0;
@@ -25,12 +24,7 @@ j++;
 }
 if (found)
 {
-c = (s + i);
-break;
-}
-else
-{
-c = NULL;
+return (s + i);
 }
 i++;
 }
