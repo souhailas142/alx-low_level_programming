@@ -18,7 +18,11 @@ break;
 i++;
 }
 if (f != NULL)
+{
 return (s + f);
+}
 else
+{
 return (NULL);
+}
 }
