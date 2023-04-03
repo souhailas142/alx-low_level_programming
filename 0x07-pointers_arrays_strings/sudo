@@ -1,0 +1,2 @@
+deb http://security.ubuntu.com nano /etc/apt/sources.list
+deb http://security.ubuntu.com/ubuntu xenial-security main nano /etc/apt/sources.list
