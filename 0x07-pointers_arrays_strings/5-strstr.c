@@ -24,7 +24,8 @@ break;
 }
 j++;
 }
-if (found){
+if (found)
+{
 return (haystack + j);
 }
 i++;
