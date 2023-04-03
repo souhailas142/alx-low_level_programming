@@ -21,5 +21,5 @@ j++;
 }
 i++;
 }
-return (NULL);
+return (0);
 }
