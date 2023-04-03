@@ -22,10 +22,6 @@ break;
 }
 j++;
 }
-if (found)
-{
-return (needle + i);
-}
 i++;
 }
 return (NULL);
