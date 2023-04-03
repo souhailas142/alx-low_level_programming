@@ -17,5 +17,5 @@ sumd2 += a[j];
 sumd1 += a[i];
 i += (size + 1);
 }
-printf("%d, %d", sumd1, sumd2);
+printf("%d, %d\n", sumd1, sumd2);
 }
