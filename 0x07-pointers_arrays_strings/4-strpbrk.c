@@ -21,6 +21,7 @@ if (*(s + i) == *(accept + j))
 found = true;
 break;
 }
+j++;
 }
 if (found)
 {
