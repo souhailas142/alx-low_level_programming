@@ -17,8 +17,7 @@ while (*(haystack + j) != '\0')
 {
 if (*(needle + i) == *(haystack + j))
 {
-found = true;
-break;
+return (haystack + i);
 }
 j++;
 }
