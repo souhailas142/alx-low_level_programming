@@ -20,16 +20,10 @@ int k = 0;
 while (s[k] != '\0')
 k++;
 if (k == i)
-{
 return (1);
-}
 else
 if (s[i] != s[k - i - 1])
-{
 return (0);
-}
 else
-{
-is_pali(s, i + 1);
-}
+return (is_pali(s, i + 1));
 }
