@@ -23,11 +23,7 @@ if (k == i)
 return (1);
 else
 if (s[i] != s[k - i - 1])
-}
 return (0);
-}
 else
-{
 is_pali(s, i + 1);
-}
 }
