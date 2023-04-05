@@ -6,7 +6,7 @@
  */
 int is_prime_number(int n)
 {
-return (_prime(n, n / 2));
+return (_prime(n, 1));
 }
 /**
  * _prime - prime number
@@ -16,11 +16,11 @@ return (_prime(n, n / 2));
  */
 int _prime(int n, int h)
 {
-if (h == 1)
-return (1);
-else
-if (n % h == 0)
+if (n <= 1)
 return (0);
-else
-return (_prime(n, h - 1));
+if (n % h == 0 && h > 1)
+return (0);
+if ((n / h) < h)
+return (1);
+return (_prime(n, h + 1));
 }
