@@ -32,7 +32,6 @@ return (i);
 int is_pali(char *s, int i)
 {
 int k = _len(s);
-k++;
 if (k == i)
 return (1);
 else
