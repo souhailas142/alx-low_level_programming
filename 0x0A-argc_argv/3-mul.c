@@ -47,8 +47,8 @@ int main(int argc, char *argv[])
 {
 if (argc > 2)
 {
-int nbr1 = (argv[1][0] - 48);
-int nbr2 = (argv[2][0] - 48);
+int nbr1 = _atoi(argv[1]);
+int nbr2 = _atoi(argv[2]);
 int multi = nbr1 * nbr2;
 print_number(multi);
 _putchar('\n');
