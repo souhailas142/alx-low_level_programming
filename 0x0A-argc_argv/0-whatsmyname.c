@@ -1,5 +1,21 @@
 #include "main.h"
-#include <stdio.h>
+ /**
+ * _puts - print string
+ * @s: string
+ * Return: 0 (SUCCESS)
+ */
+void _puts(char *s)
+{
+if (*s)
+{
+_putchar(*s);
+_puts(s + 1);
+}
+else
+{
+_putchar('\n');
+}
+}
 /**
  * main - program that prints its name
  * @argc: argument counter
@@ -8,6 +24,6 @@
  */
 int main(int argc, char *argv[])
 {
-printf("%s\n", (argv[argc - argc]));
+_puts(argv[argc - argc]);
 return (0);
 }
