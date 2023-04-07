@@ -1,3 +1,3 @@
 int _putchar(char c);
-void _puts(char *s);
+void print_number(int n);
 
