@@ -5,11 +5,6 @@
  * @argv: argument values
  * Return: 0 (SUCCESS)
  */
-int main(int argc, char *argv[])
-{
-_puts(argv[argc - argc]);
-return (0);
-}
 /**
  * _puts - print string
  * @s: string
@@ -26,4 +21,9 @@ else
 {
 _putchar('\n');
 }
+}
+int main(int argc, char *argv[])
+{
+_puts(argv[argc - argc]);
+return (0);
 }
