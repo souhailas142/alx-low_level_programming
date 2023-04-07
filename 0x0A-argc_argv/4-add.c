@@ -25,11 +25,6 @@ _putchar((unsigned int) n % 10 + '0');
  * @s: string
  * Return: nothing
  */
-/**
- * _puts - print string
- * @s: string
- * Return: nothing
- */
 void _puts(char *s)
 {
 if (*s)
