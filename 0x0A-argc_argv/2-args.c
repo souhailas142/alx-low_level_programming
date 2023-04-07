@@ -17,7 +17,7 @@ _putchar('\n');
 }
 }
 /**
- * main - program that prints its name
+ * main - program that prints all arguments it receives
  * @argc: argument counter
  * @argv: argument values
  * Return: 0 (SUCCESS)
