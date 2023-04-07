@@ -1,16 +1,5 @@
 #include "main.h"
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
-void _putchar(char c)
-{
-write(1, &c, 1);
-}
-/**
  * print_number - print number
  * @n: number
  * Return: 0 (SUCCESS)
@@ -42,7 +31,7 @@ int main(int argc, char *argv[])
 (void)argv;
 if (argc > 1)
 {
-int i;
+int i = 0;
 while (i < argc - 1)
 {
 i++;
