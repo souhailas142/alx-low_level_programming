@@ -1,6 +1,6 @@
 #include <unistd.h>
 /**
- * main - program that prints its name, followed by a new line
+ * main - program that prints its name
  * @argc: argument counter
  * @argv: argument values
  * Return: 0 (SUCCESS)
@@ -33,6 +33,6 @@ _putchar('\n');
 }
 int main(int argc, char *argv[])
 {
-_puts(argv[argc - 1]);
+_puts(argv[argc - argc]);
 return (0);
 }
