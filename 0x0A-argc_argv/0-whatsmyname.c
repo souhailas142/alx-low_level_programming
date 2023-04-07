@@ -1,3 +1,4 @@
+#include "main.h"
 #include <unistd.h>
 /**
  * main - program that prints its name
