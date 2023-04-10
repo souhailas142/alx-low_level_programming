@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - program that prints the minimum number 
+ * main - program that prints the minimum number
  * of coins to make change for an amount of money
  * @argc: argument count
  * @argv: argument values
@@ -10,27 +10,39 @@
  */
 int main(int argc, char *argv[])
 {
-if (argc == 2)
+int t, c;
+unsigned int i = 0;
+char *s;
+int cents[] = {25, 10, 5, 2};
+if (argc != 2)
 {
-int i = 0, money = atoi(argv[1]), lc = 0;
-int c[] = {25, 10, 3, 2, 1};
-while (i < 5)
+printf("Error\n");
+return (1);
+}
+t = strtol(argv[1], &s, 10);
+c = 0;
+if (!*s)
 {
-if (money >= c[i])
+while (t > 1)
 {
-lc += money / c[i];
-money = money % c[i];
-if (money % c[i] == 0)
-break;
+while (i < sizeof(cents[i]))
+{
+if (t >= cents[i])
+{
+c += t / cents[i];
+t = t % cents[i];
 }
 i++;
 }
-printf("%d\n", lc);
+}
+if (t == 1)
+c++;
 }
 else
 {
 printf("Error\n");
 return (1);
 }
+printf("%d\n", c);
 return (0);
 }
