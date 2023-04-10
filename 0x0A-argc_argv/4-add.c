@@ -61,7 +61,6 @@ printf("%d\n", add);
 else
 {
 printf("0\n");
-return (1);
 }
 return (0);
 }
