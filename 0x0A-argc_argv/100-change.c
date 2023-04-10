@@ -8,7 +8,8 @@
  * @argv: argument values
  * Return: 0 (SUCCESS)
  */
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[])
+{
 if (argc == 2)
 {
 int i = 0, money = atoi(argv[1]), lc = 0;
