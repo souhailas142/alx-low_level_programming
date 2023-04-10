@@ -39,23 +39,29 @@ return (number *sg);
  */
 int main(int argc, char *argv[])
 {
-int i = 1;
-int add = 0;
+int add = 0, i = 1;
+
+if (argc > 1)
+{
 while (i < argc)
 {
-if (_atoi(argv[i]) == 0)
+if (_atoi(argv[i]) != 0)
+{
+add += _atoi(argv[i]);
+}
+else
 {
 printf("Error\n");
 return (1);
 }
 i++;
 }
-i = 1;
-while (i < argc)
-{
-add += _atoi(argv[i]);
-i++;
-}
 printf("%d\n", add);
+}
+else
+{
+printf("0\n");
+return (1);
+}
 return (0);
 }
