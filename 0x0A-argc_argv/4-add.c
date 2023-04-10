@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
 /**
  * _atoi - convert nbr string to number
  * @s: string
