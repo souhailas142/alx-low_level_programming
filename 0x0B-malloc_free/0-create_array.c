@@ -27,16 +27,9 @@ void *_memset(void *s, int c, int len)
  */
 char *create_array(unsigned int size, char c)
 {
-	if (size == 0)
-	{
+	char *arr = (char *)malloc(size * sizeof(char));
+	if (size == 0 || arr == 0)
 		return (0);
-	}
-	else
-	{
-		char *ptr;
-
-		ptr = (char *)malloc(size * sizeof(char));
-		_memset(ptr, c, size * sizeof(char));
-		return (ptr);
-	}
+	_memset(arr, c, size * sizeof(char));
+	return (arr);
 }
