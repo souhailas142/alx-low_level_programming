@@ -12,7 +12,7 @@ void *_memset(void *s, int c, int len)
 
 	while (i < len)
 	{
-		*(char *)(s + i) = c;
+		*((char *)s + i) = c;
 		i++;
 	}
 	return (s);
@@ -32,7 +32,7 @@ char *create_array(unsigned int size, char c)
 	}
 	else
 	{
-		int *ptr;
+		char *ptr;
 
 		ptr = (char *)malloc(size * sizeof(char));
 		_memset(ptr, c, size * sizeof(char));
