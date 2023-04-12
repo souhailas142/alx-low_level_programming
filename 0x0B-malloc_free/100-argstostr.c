@@ -20,10 +20,9 @@ return (i);
  */
 char *argstostr(int ac, char **av)
 {
+int i, j, k, nc;
 if (ac == 0 || av == NULL)
 return (0);
-int i, j;
-int k, nc;
 char *str;
 i = 0;
 nc = 0;
