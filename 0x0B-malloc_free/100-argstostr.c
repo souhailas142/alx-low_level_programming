@@ -30,6 +30,7 @@ while (i < ac)
 {
 nc += _strlen(av[i]);
 i++;
+nc++;
 }
 str = malloc(nc *sizeof(char *) + 1);
 if (str == 0)
