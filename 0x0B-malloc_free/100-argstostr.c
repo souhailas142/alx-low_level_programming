@@ -34,8 +34,6 @@ i++;
 str = malloc(nc *sizeof(char *) + 1);
 if (str == 0)
 return (0);
-if (ac > 1)
-{
 k = 0;
 i = 0;
 while (i < ac)
@@ -50,7 +48,6 @@ k++;
 str[k] = '\n';
 k++;
 i++;
-}
 }
 return (str);
 }
