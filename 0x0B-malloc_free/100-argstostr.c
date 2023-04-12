@@ -22,9 +22,11 @@ char *argstostr(int ac, char **av)
 {
 if (ac == 0 || av == NULL)
 return (0);
-int i = 0, j;
-int k = 0, nc = 0;
+int i, j;
+int k, nc;
 char *str;
+i = 0;
+nc = 0;
 while (i < ac)
 {
 nc += _strlen(av[i]);
@@ -35,6 +37,7 @@ if (str == 0)
 return (0);
 if (ac > 1)
 {
+k = 0;
 i = 0;
 while (i < ac)
 {
