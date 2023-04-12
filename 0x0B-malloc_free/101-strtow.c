@@ -79,6 +79,6 @@ char **strtow(char *str)
 			i++;
 		}
 	}
-	words[j] = NULL;
+	words[j] = 0;
 	return (words);
 }
