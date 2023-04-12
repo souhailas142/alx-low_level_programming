@@ -22,7 +22,8 @@ char *argstostr(int ac, char **av)
 {
 if (ac == 0 || av == NULL)
 return (0);
-int i = 0, j, k = 0, nc = 0;
+int i = 0, j;
+int k = 0, nc = 0;
 char *str;
 while (i < ac)
 {
