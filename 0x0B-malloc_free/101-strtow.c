@@ -66,7 +66,7 @@ char **strtow(char *str)
 		len = end - start;
 		if (len > 0)
 		{
-			word = malloc(len * sizeof(char));
+			word = malloc(len * sizeof(char) + 1);
 			if (word == NULL)
 				return (0);
 			strncpy(word, str + start, len);
