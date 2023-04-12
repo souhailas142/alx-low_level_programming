@@ -47,9 +47,9 @@ char **strtow(char *str)
 	char *word;
 	char **words;
 
-	if (str == NULL || _strlen(str) == 0)
-		return (0);
 	cw = count_wrd(str);
+	if (str == NULL || _strlen(str) == 0 || cw == 0)
+		return (0);
 	words = malloc(cw * sizeof(char *) + 1);
 	if (words == NULL)
 		return (0);
