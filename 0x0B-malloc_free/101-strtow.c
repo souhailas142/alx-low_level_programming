@@ -55,7 +55,7 @@ char **strtow(char *str)
 		return (0);
 	i = 0;
 	j = 0;
-	while (str[i] && i < cw)
+	while (str[i] && j < cw)
 	{
 		start = i;
 		while ((str[i] != ' ') && (str[i] != '\0'))
