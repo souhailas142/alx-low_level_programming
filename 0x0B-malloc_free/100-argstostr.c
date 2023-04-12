@@ -21,9 +21,9 @@ return (i);
 char *argstostr(int ac, char **av)
 {
 int i, j, k, nc;
+char *str;
 if (ac == 0 || av == NULL)
 return (0);
-char *str;
 i = 0;
 nc = 0;
 while (i < ac)
