@@ -50,7 +50,7 @@ char **strtow(char *str)
 	cw = count_wrd(str);
 	if (str == NULL || _strlen(str) == 0 || cw == 0)
 		return (0);
-	words = malloc(cw * sizeof(char *) + 1);
+	words = malloc((cw + 1) * sizeof(char *));
 	if (words == NULL)
 		return (0);
 	i = 0;
@@ -66,7 +66,7 @@ char **strtow(char *str)
 		len = end - start;
 		if (len > 0)
 		{
-			word = malloc(len * sizeof(char) + 1);
+			word = malloc((len + 1) * sizeof(char));
 			if (word == NULL)
 				return (0);
 			strncpy(word, str + start, len);
