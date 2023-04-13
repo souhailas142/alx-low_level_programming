@@ -30,9 +30,8 @@ while (i < ac)
 {
 nc += _strlen(av[i]);
 i++;
-nc++;
 }
-str = malloc((nc + 1) *sizeof(char *));
+str = malloc((nc + 1) * sizeof(char *));
 if (str == 0)
 return (0);
 k = 0;
