@@ -32,7 +32,7 @@ nc += _strlen(av[i]);
 i++;
 nc++;
 }
-str = malloc(nc *sizeof(char *) + 1);
+str = malloc((nc + 1) *sizeof(char *));
 if (str == 0)
 return (0);
 k = 0;
