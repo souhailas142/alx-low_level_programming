@@ -25,9 +25,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int i = 0, j = 0, len1, len2, lent;
 	char *str;
 
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 	len1 = _strlen(s1);
 	len2 = _strlen(s2);
-	if (len1 == 0 || len2 == 0 || n == 0)
+	if (len1 == 0 || len2 == 0)
 		return (0);
 	if (n >= len2)
 		n = len2;
