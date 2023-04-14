@@ -63,7 +63,7 @@ void print_number(unsigned long int n)
  */
 int main(int argc, char **argv)
 {
-	if (argc != 3 || _atoi(argv[1]) == 0 || _atoi(argv[2]) == 0)
+	if (argc != 3)
 	{
 		_puts("Error\n");
 		exit(98);
