@@ -23,7 +23,7 @@ void _puts(char *s)
 	}
 }
 /**
- * _atoi: convert string to number
+ * _atoi: string to number
  * @s: string number
  * Return: numberor 0
  */
