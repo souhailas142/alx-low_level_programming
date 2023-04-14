@@ -1,14 +1,5 @@
 #include "main.h"
-#include <unistd.h>
-/**
- * _putchar - print character
- * @c: character
- * Return: @c
- */
-void _putchar(char c)
-{
-	write(1, &c, 1);
-}
+#include <stdlib.h>
 /**
  * _puts - printf string
  * @s: string
@@ -47,22 +38,17 @@ unsigned long int _atoi(char *s)
 }
 /**
  * print_number - print number
- * @nbr: number
+ * @n: number
  * Return: number
  */
-void print_number(unsigned long int nbr)
+void print_number(unsigned long int n)
 {
-	unsigned long int k = n;
-
-	if (n < 0)
-	{
-		n = n * (-1);
-		k = n;
-		_putchar('-');
-	}
+	unsigned long int k;
+		
+	k = n;
 	k /= 10;
 	if (k != 0)
-		printf_number(k);
+		print_number(k);
 	_putchar((unsigned long int)n % 10 + '0');
 }
 /**
@@ -78,7 +64,7 @@ int main(int argc, char **argv)
 		_puts("Error\n");
 		exit(98);
 	}
-	printf_number(_atoi(argv[1]) * _atoi(argc[2]));
+	print_number(_atoi(argv[1]) * _atoi(argv[2]));
 	_putchar('\n');
 	return (0);
 }
