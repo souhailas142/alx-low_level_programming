@@ -22,8 +22,7 @@ int _strlen(char *s)
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int i, j;
-	unsigned int len1, len2, lent;
+	unsigned int i, j, len1, len2, lent;
 	char *str;
 
 	if (!s1)
