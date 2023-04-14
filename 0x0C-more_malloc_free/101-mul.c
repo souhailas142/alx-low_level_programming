@@ -23,7 +23,7 @@ void _puts(char *s)
 	}
 }
 /**
- * _atoi: string to number
+ * _atoi - string to number
  * @s: string number
  * Return: numberor 0
  */
@@ -52,7 +52,18 @@ unsigned long int _atoi(char *s)
  */
 void print_number(unsigned long int nbr)
 {
-	int i;
+	unsigned long int k = n;
+
+	if (n < 0)
+	{
+		n = n * (-1);
+		k = n;
+		_putchar('-');
+	}
+	k /= 10;
+	if (k != 0)
+		printf_number(k);
+	_putchar((unsigned long int)n % 10 + '0');
 }
 /**
  * main - program that multiplies two positive numbers
