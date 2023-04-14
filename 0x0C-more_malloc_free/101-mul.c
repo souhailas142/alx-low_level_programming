@@ -47,7 +47,7 @@ unsigned long int _atoi(char *s)
 void print_number(unsigned long int n)
 {
 	unsigned long int k;
-		
+
 	k = n;
 	k /= 10;
 	if (k != 0)
