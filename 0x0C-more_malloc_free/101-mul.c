@@ -35,7 +35,6 @@ unsigned long int _atoi(char *s)
 				_puts("Error\n");
 				exit(98);
 			}
-		}
 		i++;
 	}
 	return ((unsigned long int)nbr * sg);
