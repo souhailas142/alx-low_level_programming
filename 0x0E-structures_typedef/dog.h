@@ -1,4 +1,3 @@
-#include "main.h"
 #ifndef _DOG_
 #define _DOG_
 /**
