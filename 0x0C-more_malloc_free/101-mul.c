@@ -18,10 +18,10 @@ void _puts(char *s)
  * @s: string number
  * Return: numberor 0
  */
-unsigned long int _atoi(char *s)
+unsigned int _atoi(char *s)
 {
 	int i = 0, sg = 1;
-	unsigned long int nbr = 0;
+	unsigned int nbr = 0;
 
 	while (s[i] != '\0')
 	{
@@ -37,22 +37,22 @@ unsigned long int _atoi(char *s)
 			}
 		i++;
 	}
-	return ((unsigned long int)nbr * sg);
+	return ((unsigned int)nbr * sg);
 }
 /**
  * print_number - print number
  * @n: number
  * Return: number
  */
-void print_number(unsigned long int n)
+void print_number(unsigned int n)
 {
-	unsigned long int k;
+	unsigned int k;
 
 	k = n;
 	k /= 10;
 	if (k != 0)
 		print_number(k);
-	_putchar((unsigned long int)n % 10 + '0');
+	_putchar((unsigned int)n % 10 + '0');
 }
 /**
  * main - program that multiplies two positive numbers
