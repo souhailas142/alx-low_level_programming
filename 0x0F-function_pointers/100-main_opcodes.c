@@ -10,33 +10,28 @@
  */
 int main(int argc, char **argv)
 {
-	int bytes, i;
-	char *arr;
+	char *m = (char*)main;
+	int i, nbr;
 
 	if (argc != 2)
 	{
 		printf("Error\n");
 		exit(1);
 	}
-
-	bytes = atoi(argv[1]);
-
-	if (bytes < 0)
+	nbr = atoi(argv[1]);
+	if (nbr < 0)
 	{
 		printf("Error\n");
 		exit(2);
 	}
-
-	arr = (char *)main;
-
-	for (i = 0; i < bytes; i++)
+	i = 0;
+	while (i < nbr)
 	{
-		if (i == bytes - 1)
-		{
-			printf("%02hhx\n", arr[i]);
-			break;
-		}
-		printf("%02hhx ", arr[i]);
+	printf("%02hhx ", *m);
+	m++;
+	i++;
 	}
+	printf("\n");
+
 	return (0);
 }
