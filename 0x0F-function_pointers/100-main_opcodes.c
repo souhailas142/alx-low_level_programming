@@ -25,7 +25,7 @@ int main(int argc, char **argv)
 	}
 	while (nbr--)
 	{
-		printf("%02hhx%s", *m, b ? " " : "\n");
+		printf("%02hhx%s", *m, nbr ? " " : "\n");
 		m++;
 	}
 	return (0);
