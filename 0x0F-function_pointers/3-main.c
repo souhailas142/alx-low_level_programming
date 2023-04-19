@@ -8,7 +8,7 @@
 int main(int argc, char *argv[])
 {
 	int nbr1, nbr2, rslt;
-	int (*func)(int, int);
+	int (*f)(int, int);
 
 	if (argc != 4)
 	{
@@ -17,13 +17,13 @@ int main(int argc, char *argv[])
 	}
 	nbr1 = atoi(argv[1]);
 	nbr2 = atoi(argv[3]);
-	func = get_op_func(argv[2]);
-	if (!func)
+	f = get_op_func(argv[2]);
+	if (!f)
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	rslt = func(nbr1, nbr2);
+	rslt = f(nbr1, nbr2);
 	printf("%d\n", rslt);
 	return (0);
 }
