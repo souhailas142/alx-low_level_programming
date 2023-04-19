@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 	if (!f)
 	{
 		printf("Error\n");
-		exit(99);
+		exit(98);
 	}
 	rslt = f(nbr1, nbr2);
 	printf("%d\n", rslt);
