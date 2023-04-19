@@ -3,15 +3,15 @@
 
 /**
  * main - prints its own opcodes
- * @argc: number of args
- * @argv: array of args
+ * @argc: number of arguments
+ * @argv: array of arguments
  *
- * Return: SUCCESS
+ * Return: Always 0 (Success)
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 	int bytes, i;
-	char *a;
+	char *arr;
 
 	if (argc != 2)
 	{
@@ -27,17 +27,16 @@ int main(int argc, char **argv)
 		exit(2);
 	}
 
-	a = (char *)main;
+	arr = (char *)main;
 
-	while (i < bytes)
+	for (i = 0; i < bytes; i++)
 	{
 		if (i == bytes - 1)
 		{
-			printf("%02hhx\n", a[i]);
+			printf("%02hhx\n", arr[i]);
 			break;
 		}
-		printf("%02hhx ", a[i]);
-		i++;
+		printf("%02hhx ", arr[i]);
 	}
 	return (0);
 }
