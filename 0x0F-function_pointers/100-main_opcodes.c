@@ -5,13 +5,12 @@
  * main - prints its own opcodes
  * @argc: number of arguments
  * @argv: array of arguments
- *
- * Return: Always 0 (Success)
+ * Return: (Success)
  */
 int main(int argc, char **argv)
 {
 	char *m = (char*)main;
-	int i, nbr;
+	int nbr;
 
 	if (argc != 2)
 	{
@@ -24,12 +23,10 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(2);
 	}
-	i = 0;
-	while (i < nbr)
+	while (nbr--)
 	{
 	printf("%02hhx ", *m);
 	m++;
-	i++;
 	}
 	printf("\n");
 
