@@ -9,7 +9,7 @@
  */
 int main(int argc, char **argv)
 {
-	char *m = (char*)main;
+	char *m = (char *)main;
 	int nbr;
 
 	if (argc != 2)
