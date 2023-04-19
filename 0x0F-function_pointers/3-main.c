@@ -26,7 +26,11 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(98);
 	}
-
+	if ((op == '/' || op == '%') && nbr2 == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
 	rslt = f(nbr1, nbr2);
 	printf("%d\n", rslt);
 
