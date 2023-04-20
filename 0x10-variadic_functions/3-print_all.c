@@ -7,10 +7,10 @@
 void print_all(const char * const format, ...)
 {
 	int i;
-	char *str, *space;
+	char *str, *s;
 	va_list ptr;
 
-	space = "";
+	s = "";
 	i = 0;
 	va_start(ptr, format);
 	while (format[i])
@@ -18,25 +18,25 @@ void print_all(const char * const format, ...)
 		switch (format[i])
 		{
 			case 'c':
-				printf("%s%c", space, va_arg(ptr, int));
+				printf("%s%c", s, va_arg(ptr, int));
 				break;
 			case 'i':
-				printf("%s%d", space, va_arg(ptr, int));
+				printf("%s%d", s, va_arg(ptr, int));
 				break;
 			case 'f':
-				printf("%s%f", space, va_arg(ptr, double));
+				printf("%s%f", s, va_arg(ptr, double));
 				break;
 			case 's':
 				str = va_arg(ptr, char *);
-				if (!str)
+				if (str == NULL)
 					str = "(nil)";
-				printf("%s%s", space, str);
+				printf("%s%s", s, str);
 				break;
 			default:
 				i++;
 				continue;
 		}
-		space = ", ";
+		s = ", ";
 		i++;
 	}
 	printf("\n");
