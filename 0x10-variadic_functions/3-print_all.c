@@ -29,9 +29,8 @@ void print_all(const char * const format, ...)
 			case 's':
 				str = va_arg(ptr, char *);
 				if (!str)
-					printf("%s%s", space, "(nil)");
-				else
-					printf("%s%s", space, str);
+					str = "(nil)";
+				printf("%s%s", space, str);
 				break;
 			default:
 				i++;
