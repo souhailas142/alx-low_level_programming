@@ -6,6 +6,15 @@
  */
 void free_list(list_t *head)
 {
-	if (head != NULL)
-		free(head);
+	list_t *node;
+
+	if (!head)
+		return;
+	node = head;
+	while (node)
+	{
+		free(node->str);
+		free(node->len);
+		node = node->next;
+	}
 }
