@@ -1,5 +1,5 @@
 #include "lists.h"
-/*
+/**
  * add_node_end - adds a new node at the end of lists
  * @head: hread
  * @str: str
@@ -9,6 +9,7 @@ list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *end_node = NULL;
 	list_t **t = NULL;
+
 	end_node = malloc(sizeof(list_t));
 	if (end_node == NULL)
 		return (NULL);
