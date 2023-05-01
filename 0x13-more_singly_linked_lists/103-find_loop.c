@@ -5,7 +5,7 @@
  * Return: SUCCESS or NULL id no loop
  */
 
-listint_t *loop_listint_t(listint_t *head)
+listint_t *find_listint_loop(listint_t *head)
 {
         listint_t *ptr, *end;
 
