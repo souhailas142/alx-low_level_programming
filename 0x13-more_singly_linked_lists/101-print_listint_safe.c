@@ -54,6 +54,7 @@ size_t print_listint_safe(const listint_t *head)
 		nbrNode++;
 		list = _f(list, nbrNode, head);
 		printf("[%p] %d\n", (void *)head, head->n);
+		head = head->next;
 	}
 	free(list);
 	return (nbrNode);
