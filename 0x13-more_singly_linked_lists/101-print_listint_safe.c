@@ -12,7 +12,7 @@ const listint_t **_f(const listint_t **list, size_t size, const listint_t *new)
 	size_t i;
 
 	n = malloc(size * sizeof(listint_t *));
-	if (!n)
+	if (n == NULL)
 	{
 		free(list);
 		exit(98);
@@ -23,7 +23,7 @@ const listint_t **_f(const listint_t **list, size_t size, const listint_t *new)
 		n[i] = list[i];
 		i++;
 	}
-	n[i] = (listint_t *)new;
+	n[i] = new;
 	free(list);
 	return (n);
 }
@@ -37,6 +37,7 @@ size_t print_listint_safe(const listint_t *head)
 	size_t i, nbrNode;
 	const listint_t **list = NULL;
 
+	nbrNode = 0;
 	while (head != NULL)
 	{
 		i = 0;
