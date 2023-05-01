@@ -38,12 +38,13 @@ size_t free_listint_safe(listint_t **h)
 {
 	listint_t *next, *loop;
 	size_t len;
-	int l = 1;
+	int l;
 
 	if (h == NULL || *h == NULL)
 		return (0);
 	loop = loop_listint_t(*h);
 	len = 0;
+	l = 1;
 	while ((*h != loop || l) && *h != NULL)
 	{
 		len++;
@@ -58,7 +59,7 @@ size_t free_listint_safe(listint_t **h)
 			len++;
 			next = next->next;
 			free((*h)->next);
-			loop = 0;
+			l = 0;
 		}
 		free(*h);
 		*h = next;
