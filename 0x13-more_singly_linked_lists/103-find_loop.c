@@ -2,9 +2,8 @@
 /**
  * loop_listint_t - loop in linked list
  * @head: head
- * Return: SUCCESS or NULL id no loop
+ * Return: SUCCESS or NULL if no loop
  */
-
 listint_t *find_listint_loop(listint_t *head)
 {
         listint_t *ptr, *end;

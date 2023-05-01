@@ -2,7 +2,7 @@
 /**
  * loop_listint_t - loop in linked list
  * @head: head
- * Return: SUCCESS or NULL id no loop
+ * Return: SUCCESS or NULL if no loop
  */
 
 listint_t *loop_listint_t(listint_t *head)
