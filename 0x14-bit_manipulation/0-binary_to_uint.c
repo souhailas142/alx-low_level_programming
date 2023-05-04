@@ -7,8 +7,10 @@
 int _isNbr(const char *s)
 {
 	int number, i, size;
-	
-	number = i = size = 0;
+
+	number = 0;
+	i = 0;
+	size = 0;
 	while (s[size] != '\0')
 		size++;
 	while (i < size)
