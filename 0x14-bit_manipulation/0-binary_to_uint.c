@@ -1,29 +1,5 @@
 #include "main.h"
 /**
- * _isNbr - string to int
- * @s: string number
- * Return: number or 0
- */
-int _isNbr(const char *s)
-{
-	int number, i, size;
-
-	number = 0;
-	i = 0;
-	size = 0;
-	while (s[size] != '\0')
-		size++;
-	while (i < size)
-	{
-		if (s[i] >= '0' && s[i] <= '9')
-			number = 10 * number + (s[i] - 48);
-		else
-			return (0);
-		i++;
-	}
-	return (number);
-}
-/**
  * _strlen - len string
  * @str: string
  * Return: len
@@ -61,16 +37,23 @@ unsigned int binary_to_uint(const char *b)
 {
 	int nbr, i, len;
 
-	if (_isNbr(b) == 0 || !b)
+	if (!b)
 		return (0);
 	i = 0;
 	len = _strlen(b) - 1;
 	nbr = 0;
 	while (b[i] && len != -1)
 	{
-		nbr += (_pow_recursion(2, len) * (b[i] - 48));
-		i++;
-		len--;
+		if (b[i] != '1' && b[i] != '0')
+		{
+			return (0);
+		}
+		else
+		{
+			nbr += (_pow_recursion(2, len) * (b[i] - 48));
+			i++;
+			len--;
+		}
 	}
 	return (nbr);
 }
