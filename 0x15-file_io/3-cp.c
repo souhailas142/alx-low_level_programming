@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * ferror - checks files error
+ * f_error - checks files error
  * @ff: file from
  * @ft: file to
  * @argv: list of arguments
