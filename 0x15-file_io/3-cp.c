@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
  * ferror - checks files error
  * @ff: file from
@@ -8,7 +6,7 @@
  * @argv: list of arguments
  * Return: no return.
  */
-void ferror(int ff, int ft, char *argv[])
+void f_error(int ff, int ft, char *argv[])
 {
 	if (ff == -1)
 	{
@@ -40,16 +38,16 @@ int main(int argc, char *argv[])
 	}
 	ff = open(argv[1], O_RDONLY);
 	ft = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
-	ferror(ff, ft, argv);
+	f_error(ff, ft, argv);
 	nchars = 1024;
 	while (nchars == 1024)
 	{
-		nchars = read(ff, buf, 1024);
+		nchars = read(ff, b, 1024);
 		if (nchars == -1)
-			ferror(-1, 0, argv);
+			f_error(-1, 0, argv);
 		nw = write(ft, b, nchars);
 		if (nw == -1)
-			ferror(0, -1, argv);
+			f_error(0, -1, argv);
 	}
 	cErr = close(ff);
 	if (cErr == -1)
